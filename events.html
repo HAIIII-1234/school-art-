@@ -29,10 +29,44 @@
         color: #444;
         margin-top: 32px;
       }
+      header {
+        background: #222;
+        color: #fff;
+        padding: 60px 0 0 0; /* Top padding only for title */
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        background: #444;
+        padding: 15px;
+        margin-top: 16px; /* Optional: space between title and nav */
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
     </style>
   </head>
   <body>
-    <header><h1>Upcoming Events 📅</h1></header>
+    <header>
+      <h1>Upcoming Events 📅</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
     <main>
       <section>
         <h3>Art Exhibition</h3>
