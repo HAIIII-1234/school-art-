@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arts Club | Gallery</title>
     <style>
-      header {
-        background-color: #222;
-        color: white;
-        padding: 53px;
-        text-align: center;
-      }
-
       body {
         font-family: Arial, sans-serif;
         background-color: #ffffff;
@@ -57,10 +50,44 @@
         display: block;
         margin: 0 auto;
       }
+      header {
+        background: #222;
+        color: #fff;
+        padding: 50px 0 0 0; /* Top padding only for title */
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        background: #444;
+        padding: 15px;
+        margin-top: 16px; /* Optional: space between title and nav */
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
     </style>
   </head>
   <body>
-    <header><h1>Gallery 🖼️</h1></header>
+    <header>
+      <h1>Gallery 🖼️</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
     <section id="gallery">
       <h3>Artwork by Our Members</h3>
       <p>
@@ -71,16 +98,16 @@
       <div class="artworks">
         <div class="artwork">
           <h4>Artwork by Afnan</h4>
-          <img src="IMG_2028.jpeg" alt="Artwork by Afnan" />
+          <img src="images/IMG_2028.jpeg" alt="Artwork by Afnan" />
         </div>
         <div class="artwork">
           <h4>Artwork by Maya</h4>
-          <img src="IMG_2029.jpeg" alt="Artwork by Maya" />
+          <img src="images/IMG_2029.jpeg" alt="Artwork by Maya" />
         </div>
         <div class="artwork">
           <h4>Artwork by Leo</h4>
           <img
-            src="Screenshot 2025-05-24 141244.png"
+            src="images/Screenshot 2025-05-24 141244.png"
             alt="Artwork by Leo"
           />
         </div>
