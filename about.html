@@ -6,17 +6,13 @@
     <title>Arts Club | About Us</title>
     <style>
       body {
-        font-family: "Segoe UI", sans-serif;
-
-        background-color: #fefefe;
-        color: #222;
+        font-family: sans-serif;
+        background: #f0f0f0;
+        color: #333;
       }
 
-      header {
-        background-color: #222;
-        color: white;
-        padding: 32px;
-        text-align: center;
+      h1 {
+        font-size: 40px;
       }
 
       main {
@@ -42,14 +38,45 @@
       li {
         margin-bottom: 8px;
       }
+      header {
+        background: #222;
+        color: #fff;
+        padding: 16px 0 0 0; /* Top padding only for title */
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        background: #444;
+        padding: 15px;
+        margin-top: 16px; /* Optional: space between title and nav */
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>About the Arts Club</h1>
       <p>Where creativity meets community 💫</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
-
     <main>
       <section id="history">
         <h3>Our History</h3>
